@@ -105,7 +105,6 @@ proxy-groups:
   - {name: Speedtest, icon: https://github.com/JohnsonRan/icon/raw/main/icon/speedtest.png, type: select, proxies: [DIRECT, 节点选择, 香港, 台湾, 日本, 新加坡, 美国]}
   - {name: Emby, icon: https://github.com/JohnsonRan/icon/raw/main/icon/emby.png, <<: *pr}
   - {name: AI, icon: https://github.com/JohnsonRan/icon/raw/main/icon/ChatGPT-green.png, <<: *pr}
-  - {name: Steam, icon: https://github.com/JohnsonRan/icon/raw/main/icon/steam.png, <<: *pr}
   - {name: Apple, icon: https://github.com/JohnsonRan/icon/raw/main/icon/apple.png, type: select, proxies: [美国, 香港, 台湾, 日本, 新加坡, DIRECT]}
   - {name: Github, icon: https://github.com/JohnsonRan/icon/raw/main/icon/github.png, <<: *pr}
   - {name: Telegram, icon: https://github.com/JohnsonRan/icon/raw/main/icon/telegram(blue1).png, <<: *pr}
@@ -149,8 +148,6 @@ rules:
   - RULE-SET,github,Github
   - RULE-SET,microsoft,Microsoft
   - RULE-SET,emby,Emby
-  - RULE-SET,steamcn,DIRECT
-  - RULE-SET,steam,Steam
   - RULE-SET,gfwlist,节点选择
   - RULE-SET,chinadomains,DIRECT
   - RULE-SET,cn_site,DIRECT
@@ -217,9 +214,6 @@ rule-providers:
   win-update:
     <<: *mrs
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/win-update.mrs"
-  bahamut:
-    <<: *mrs
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/bahamut.mrs"
   cn_site:
     <<: *mrs
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/cn.mrs"
@@ -244,12 +238,6 @@ rule-providers:
   gfwlist:
     <<: *mrs
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/gfw.mrs"
-  steamcn:
-    <<: *mrs
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/steam@cn.mrs"
-  steam:
-    <<: *mrs
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/steam.mrs"
   no-fakeip:
     <<: *domaintxt
     url: "https://raw.githubusercontent.com/JohnsonRan/CRules/master/rules/no-fakeip.txt"
