@@ -86,7 +86,7 @@ type Message = {
 
 ## 5. AI 模型接入
 
-模型调用必须经过统一适配层，页面不直接依赖 OpenAI、Claude、Gemini 等厂商 SDK。
+模型调用必须经过统一适配层，页面不直接依赖 OpenAI、deepseek、智谱 等厂商 SDK。
 
 ```ts
 type ChatOptions = {
