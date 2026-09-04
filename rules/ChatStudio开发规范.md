@@ -4,7 +4,7 @@
 
 ## 1. 技术栈
 
-- **框架**：React + TypeScript + WXT
+- **框架**：React + TypeScript + Vite
 - **Chrome 插件**：Manifest V3
 - **UI**：Tailwind CSS + shadcn/ui + Lucide Icons
 - **状态管理**：Zustand
